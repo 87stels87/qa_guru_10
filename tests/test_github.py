@@ -34,7 +34,6 @@ def test_github_with_allure_step(browser_setup):
 
 @allure.feature("Проверка отображения issues в репозитории")
 @allure.epic("Гитхаб")
-@allure.label("owner", "RS")
 @allure.tag("smoke")
 @allure.severity(Severity.NORMAL)
 @allure.link("https://github.com", name="issue text")
