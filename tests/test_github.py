@@ -65,7 +65,7 @@ def test_filling_all_fields(browser_setup):
     browser.element('#subjectsInput').double_click().set("accounting")
     browser.element('#react-select-2-option-0').with_(timeout=browser.config.timeout * 2).double_click()
     browser.element('[for="hobbies-checkbox-2"]').click()
-    browser.element('#uploadPicture').send_keys(os.path.abspath('picture.jpeg'))
+    browser.element('#uploadPicture').send_keys(os.path.abspath('tests/picture.jpeg'))
     browser.element('[placeholder="Current Address"]').click().type("Москва")
     browser.element('#state').click()
     browser.element('#react-select-3-option-0').click()
